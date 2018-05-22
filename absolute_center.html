@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>absolute_center</title>
+  	<meta charset="utf-8">
+  	<script src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="abs_c.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<style>
+	.error_n {
+		display: none;
+		color: red;
+	}
+	.show {
+		display: block;
+	}
+	.hidden {
+		display: none;
+	}
+	input[type=number] {
+		width: 40px;
+	}
+
+	</style>
+</head>
+<body>
+	<blockquote>
+      <p class="style7">Абсолютный центр</p>
+	      <p class="error_n">Ошибка ввода данных <br></p>
+        <form action="" method="" id='tops' class='show'>
+	        <font size="3">Число вершин графа: <input name="var" type="number" maxlenght="2" size="2"><br><br>
+	        <input type="submit" value="Дальше">
+	    	</font>
+		</form>
+        <form action="" method="" id='matrix' class='hidden'>
+	        <div id="arr_inputs">
+	        	
+	        </div>
+	        <input type="submit" value="Дальше">
+	    	</font>
+		</form>
+		<div id="results" class="hidden">
+			<p >Координата по оси ox: <span id="ox"></span></p>
+			<p >Координата по оси oy: <span id="oy"></span></p>
+			<p >Дуга: <span id="arc"></span></p>
+		</div>
+	</blockquote>
+</body>
+</html>
